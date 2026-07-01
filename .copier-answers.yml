@@ -1,0 +1,32 @@
+# Changes here will be overwritten by Copier
+
+_commit: '4855235'
+_src_path: https://github.com/adrien-berchet/python-template.git
+author_email: adrien.berchet@gmail.com
+author_name: Adrien Berchet
+copyright_holder: Adrien Berchet
+copyright_license: MIT License
+copyright_year: '2026'
+distribution_name: python-template-example
+docs_type: sphinx
+docs_url: https://python-template-example.readthedocs.io
+download_url: https://github.com/adrien-berchet/python-template-example
+init_git: true
+maintainer: Adrien Berchet
+package_name: python_template_example
+project_description: A generated project used to validate the Copier template.
+project_name: Python Template Example
+pypi: true
+repository_host: github.com
+repository_name: python-template-example
+repository_namespace: adrien-berchet
+repository_provider: github
+setup_codeql: false
+setup_container: false
+setup_renovate: false
+strict_typing: true
+tracker_url: https://github.com/adrien-berchet/python-template-example/issues
+type_checker: pyright
+version: 0.1.0.dev0
+
+# End of Copier answers

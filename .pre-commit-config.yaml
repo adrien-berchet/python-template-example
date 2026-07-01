@@ -1,0 +1,54 @@
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+        exclude: ^uv.lock
+      - id: check-case-conflict
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: debug-statements
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
+    rev: v9.18.0
+    hooks:
+        - id: commitlint
+          stages:
+            - commit-msg
+          additional_dependencies: ['conventional-changelog-conventionalcommits']
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.2
+    hooks:
+      - id: codespell
+        args: ["-x", ".codespellignorelines"]
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+        args: ["--config=.gitleaks.toml"]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.20
+    hooks:
+      - id: ruff-check
+        args: ["--fix"]
+
+      - id: ruff-format
+
+  - repo: local
+    hooks:
+      - id: uv-sync
+        name: update uv.lock and venv
+        pass_filenames: false
+        language: system
+        entry: uv sync
+        files: ^(uv\.lock|pyproject\.toml)$
