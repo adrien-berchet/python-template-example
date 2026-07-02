@@ -22,8 +22,7 @@ Once all conflicts are resolved, commit the result.
 
 1. Ensure your project is clean and tests pass:
    ```bash
-   uv sync
-   tox -p
+tox -p
    ```
 2. Commit or stash any outstanding changes
 3. Run the update:

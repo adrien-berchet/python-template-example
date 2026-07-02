@@ -45,7 +45,7 @@ jobs:
         run: rm -rf .tox/*/tmp
 
       - name: Run tox
-        run: uv run --locked tox
+        run: uvx --with tox-gh-actions tox
 
       - name: JUnit Report Action
         uses: mikepenz/action-junit-report@v5

@@ -7,7 +7,7 @@ Tests are run with [pytest] via [tox].
 To run tests directly with pytest:
 
 ```bash
-uv run pytest
+pytest
 ```
 
 ## Full tox suite
@@ -30,8 +30,8 @@ tox -e docs           # documentation build
 ## Running a specific test
 
 ```bash
-uv run pytest tests/test_example.py
-uv run pytest tests/test_example.py::test_add_3_4
+pytest tests/test_example.py
+pytest tests/test_example.py::test_add_3_4
 ```
 
 ## Coverage report
@@ -39,7 +39,7 @@ uv run pytest tests/test_example.py::test_add_3_4
 The test run generates a coverage report in `reports/`:
 
 ```bash
-uv run pytest --cov=python_template_example --cov-report=html
+pytest --cov=python_template_example --cov-report=html
 ```
 
 [pytest]: https://pytest.org/

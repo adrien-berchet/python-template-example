@@ -1,6 +1,6 @@
 # Changes here will be overwritten by Copier
 
-_commit: '4855235'
+_commit: f2ee9f4
 _src_path: https://github.com/adrien-berchet/python-template.git
 author_email: adrien.berchet@gmail.com
 author_name: Adrien Berchet
@@ -27,6 +27,7 @@ setup_renovate: false
 strict_typing: true
 tracker_url: https://github.com/adrien-berchet/python-template-example/issues
 type_checker: pyright
+use_uv_lock: false
 version: 0.1.0.dev0
 
 # End of Copier answers

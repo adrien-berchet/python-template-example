@@ -4,7 +4,7 @@
 
 ## 0.1.0.dev0
 
-> 01 July 2026
+> 02 July 2026
 
 ### New Features
 
