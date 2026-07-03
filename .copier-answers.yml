@@ -1,6 +1,6 @@
 # Changes here will be overwritten by Copier
 
-_commit: afdf74e
+_commit: 8fd774d
 _src_path: https://github.com/adrien-berchet/python-template.git
 author_email: adrien.berchet@gmail.com
 author_name: Adrien Berchet
@@ -20,7 +20,6 @@ pypi: true
 repository_host: github.com
 repository_name: python-template-example
 repository_namespace: adrien-berchet
-repository_provider: github
 setup_codeql: false
 setup_container: false
 setup_renovate: false

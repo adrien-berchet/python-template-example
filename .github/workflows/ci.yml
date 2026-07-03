@@ -36,6 +36,12 @@ jobs:
 
 
 
+  docs:
+    uses: ./.github/workflows/_docs.yml
+
+
+
+
 
   pypi:
     needs: [dist, test]

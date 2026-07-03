@@ -3,7 +3,6 @@
 [![PyPI](https://img.shields.io/pypi/v/python-template-example.svg)](https://pypi.org/project/python-template-example)
 [![License](https://img.shields.io/github/license/adrien-berchet/python-template-example)](https://github.com/adrien-berchet/python-template-example/blob/main/LICENSE.txt)
 
-
 # Python Template Example
 
 A generated project used to validate the Copier template.
