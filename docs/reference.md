@@ -8,9 +8,5 @@ API, and the changelog.
 
 CLI <cli>
 API <_api/python_template_example>
-```
-
-## Changelog
-
-```{include} ../CHANGELOG.md
+changelog
 ```
